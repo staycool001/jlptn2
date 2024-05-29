@@ -93,6 +93,9 @@
       width: 100vw;
       height: 100vh;
     }
+    #resetButton{
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -115,7 +118,7 @@
     <div id="wrongCount"></div>
     <div id="remainingCount"></div>
 
-    <button id="resetButton" onclick="resetQuiz()" style="display: none;">Reset Quiz</button>
+    <button id="resetButton" onclick="resetQuiz()">Reset Quiz</button>
 
   </div>
 </div>
@@ -393,6 +396,36 @@ const questsSet1 = [
     correctOption: "もはん",
     Explanation: "exemplar, exemplification, exemplum, model, example"
   },
+  {
+    quest: "ガソリンの値段が「大幅」に上がった。",
+    options: ["おおはば", "おおふく", "だいはば", "だいふく"],
+    correctOption: "おおはば",
+    Explanation: "big, large, drastic, substantial"
+  },
+  {
+    quest: "昨日、とても「悔しい」出来事があった。",
+    options: ["かなしい", "くやしい", "はずかしい", "おそろしい"],
+    correctOption: "くやしい",
+    Explanation: "vexing, annoying, frustrating, regrettable, mortifying"
+  },
+  {
+    quest: "わかりやすく書いたつもりだったが、「幼稚」な文章になってしまった。",
+    options: ["ゆうち", "ようし", "ようち", "ゆうし"],
+    correctOption: "ようち",
+    Explanation: "infancy, childish, infantile"
+  },
+  {
+    quest: "今回は田中選手の「圧勝」だった。",
+    options: ["あっしょう", "ゆうしょう", "あっしゅう", "ゆうしゅう"],
+    correctOption: "あっしょう",
+    Explanation: "complete victory"
+  },
+  {
+    quest: "暑い季節は食べ物が「傷みやすい」。",
+    options: ["きずみやすい", "きみやすい", "いだみやすい", "いたみやすい"],
+    correctOption: "いたみやすい",
+    Explanation: "痛み/傷み 「いたみ」pain, ache, soreness, grief, distress\ndamage, injury, wear, bruise, break"
+  },
   // Add more questions as needed
 ];
 
@@ -667,6 +700,36 @@ const questsSet2 = [
     correctOption: "招待",
     Explanation: "invitation"
   },
+  {
+    quest: "洗濯物がまだ「しめっぽい」。",
+    options: ["汚っぽい", "泡っぽい", "汗っぽい", "湿っぽい"],
+    correctOption: "湿っぽい",
+    Explanation: "damp, humid, wet"
+  },
+  {
+    quest: "このパソコンにはプリンターが「せつぞく」されています。",
+    options: ["設属", "接属", "設続", "接続"],
+    correctOption: "接続",
+    Explanation: "connection, attachment, union, join, joint, link"
+  },
+  {
+    quest: "私は親に「さからって」大学に進学した。",
+    options: ["逆らって", "敵らって", "拒って", "争って"],
+    correctOption: "逆らって",
+    Explanation: "to go against, to oppose, to disobey, to defy"
+  },
+  {
+    quest: "田中社長の強引なやり方を「ひはん」する人もいる。",
+    options: ["非判", "批判", "批反", "非反"],
+    correctOption: "批判",
+    Explanation: "criticism, judgement, judgment, comment"
+  },
+  {
+    quest: "Ａ社の製品のほうが機能の面では「おとって」いると思う。",
+    options: ["悪って", "負って", "劣って", "乏って"],
+    correctOption: "劣って",
+    Explanation: "to be inferior to, to be less good at, to fall behind"
+  },
   // Add more questions as needed
 ];
 
@@ -916,6 +979,36 @@ const questsSet3 = [
     options: ["型", "種", "属", "類"],
     correctOption: "類",
     Explanation: "食器類「しょっきるい」dinnerware, cutlery"
+  },
+  {
+    quest: "歴史小説家西村氏の代表的な作品を収めた作品（　）が発行された。",
+    options: ["集", "族", "部", "団"],
+    correctOption: "集",
+    Explanation: "集「しゅう」collection, compilation"
+  },
+  {
+    quest: "ここから駅まで行くなら、線路（　）の道を行くのが一番早いですよ。",
+    options: ["付き", "並び", "沿い", "従い"],
+    correctOption: "沿い",
+    Explanation: "沿い「ぞい」along"
+  },
+  {
+    quest: "田中先生は、子どもの英語教育に関する（　）問題について研究している。",
+    options: ["総", "複", "数", "諸"],
+    correctOption: "諸",
+    Explanation: "諸問題「しょもんだい」many problems, various problems"
+  },
+  {
+    quest: "大きな図書館に行きたいが、遠いのでけっこう電車（　）がかかる。",
+    options: ["金", "賃", "料", "財"],
+    correctOption: "賃",
+    Explanation: "電車賃「でんしゃちん」train fare"
+  },
+  {
+    quest: "町は朝からお祭りムード（　）だった。",
+    options: ["一例", "一面", "一種", "一色"],
+    correctOption: "一色",
+    Explanation: "一色「いちれい」example, an instance\n一面「いちめん」one face, one surface\n一例「いちれい」example, an instance\n一種「いっしゅ」species, kind, variety"
   },
   // Add more questions as needed
   
@@ -1205,7 +1298,7 @@ const questsSet4 = [
     Explanation: "ばめん scene, setting (e.g. of novel)"
   },
   {
-    quest: "A社はこの１０年で、社員一方人の大企業に（　）した。",
+    quest: "A社はこの１０年で、社員一万人の大企業に（　）した。",
     options: ["発達", "展開", "上昇", "成長"],
     correctOption: "成長",
     Explanation: "せいちょう growth, grow to adulthood"
@@ -1299,6 +1392,48 @@ const questsSet4 = [
     options: ["様子", "容姿", "外見", "格好"],
     correctOption: "格好",
     Explanation: "格好「かっこう」shape, form, figure, posture, pose, appearance, suitable, fit, reasonable"
+  },
+  {
+    quest: "子どものいたずらにいちいち（　）を立てても仕方がない。",
+    options: ["気", "頭", "腹", "心"],
+    correctOption: "腹",
+    Explanation: "腹を立つ「はらをたつ」To get angry"
+  },
+  {
+    quest: "Ａ社が開発した商品管理システムは評価が高く、多くの会社に（　）されている。",
+    options: ["導入", "引用", "吸収", "移行"],
+    correctOption: "導入",
+    Explanation: "どうにゅう introduction, bringing in, leading in, installation"
+  },
+  {
+    quest: "工事の音が（　）、全然眠れない。",
+    options: ["しつこくて", "ずうずうしくて", "やかましくて", "けわしくて"],
+    correctOption: "やかましくて",
+    Explanation: "喧しい「やかましい」noisy, boisterous"
+  },
+  {
+    quest: "自転車のタイヤが（　）して、空気が抜けていた。",
+    options: ["ストライキ", "パンク", "ダウン", "ミス"],
+    correctOption: "パンク",
+    Explanation: "パンク puncture, flat tyre (tire), bursting"
+  },
+  {
+    quest: "セミナーの日の朝は準備の時間がないので、資料は（　）コピーしておいてください。",
+    options: ["遅くとも", "あらかじめ", "とっくに", "先々"],
+    correctOption: "あらかじめ",
+    Explanation: "予め「あらかじめ」beforehand, in advance, previously"
+  },
+  {
+    quest: "山口さんは柔道をしているので、がっしりした（　）をしている。",
+    options: ["体格", "姿勢", "格好", "容姿"],
+    correctOption: "格好",
+    Explanation: "かっこう shape, form, figure, posture, pose"
+  },
+  {
+    quest: "こんなに夜遅くまでおきていると、明日の仕事に（　）よ。",
+    options: ["かかわり会う", "割り込む", "引っかかる", "差し支える"],
+    correctOption: "差し支える",
+    Explanation: "さしつかえる to interfere, to hinder, to become impeded"
   },
   // Add more questions as needed
 ];
@@ -1770,7 +1905,7 @@ const questsSet5 = [
     quest: "少しの間、「じっとしていて」ください。",
     options: ["見ないで", "話さないで", "使わないで", "動かないで"],
     correctOption: "動かないで",
-    Explanation: "凝乎と「じっと」motionlessly (e.g. stand, wait), (be) still"
+    Explanation: "凝乎と「じっと」motionlessly (e.g. stand, wait), (be) still\n凝乎と「じっと／じーと／じいっと」motionlessly (e.g. stand, wait), (be) still"
   },
   {
     quest: "「あやまった」情報が流れてしまったようだ。",
@@ -2088,6 +2223,36 @@ const questsSet6 = [
     options: ["この二つの問題は「隔てて」考えるべきだ。", "大きな川が二つの市を「隔てて」いる。", "５分ほど休憩を「隔てて」、１１時から再開します。", "試験のときは、隣の人と「隔てて」座ってください。"],
     correctOption: "試験のときは、隣の人と「隔てて」座ってください。",
     Explanation: "へだてる to separate (by distance, time, etc.), to isolate, to partition, to divide"
+  },
+  {
+    quest: "頑丈",
+    options: ["石川さんは「頑丈」で、なかなか意見を変えない。", "重要な書類は必ず金庫に入れて、「頑丈」に管理してください。", "このいすはとても「頑丈」で、少しくらい乱暴に扱っても壊れません。", "Ａ社との間には「頑丈」な信頼関係があるので安心です。"],
+    correctOption: "このいすはとても「頑丈」で、少しくらい乱暴に扱っても壊れません。",
+    Explanation: "がんじょう solid, firm, stout, burly, strong, sturdy"
+  },
+  {
+    quest: "畳む",
+    options: ["青木さんは、小さな紙を器用に「畳んで」鶴を作った。", "この上着は小さく「畳む」ことができるので、旅行に持っていくのに便利だ。", "髪が長いと首の辺りが暑いので、夏はいつも髪を「畳んで」います。", "中川さんは腕を「畳んで」、何か考えているようだった。"],
+    correctOption: "この上着は小さく「畳む」ことができるので、旅行に持っていくのに便利だ。",
+    Explanation: "たたむ to fold (clothes)"
+  },
+  {
+    quest: "合図",
+    options: ["スタートの「合図」で、選手たちは一斉に走り出した。", "ガス会社から、器具の点検を来月行うという「合図」があった。", "山道に何か小さな動物が歩いたような「合図」があった。", "種をまいたところを忘れないように、「合図」をつけておいた。"],
+    correctOption: "スタートの「合図」で、選手たちは一斉に走り出した。",
+    Explanation: "あいず sign, signal"
+  },
+  {
+    quest: "こつこつ",
+    options: ["何度も説明を聞いていたら、「こつこつ」とわかってきた。", "料理が熱くて、舌をやけどしそうなので、「こつこつ」と食べた。", "朝は涼しかったが、昼になって「こつこつ」と気温が上がり始めた。", "資格をとるために、この一年間、毎日「こつこつ」と勉強をしてきた。"],
+    correctOption: "資格をとるために、この一年間、毎日「こつこつ」と勉強をしてきた。",
+    Explanation: "こつこつ／コツコツ unflaggingly, steadily, untiringly, laboriously"
+  },
+  {
+    quest: "縮む",
+    options: ["箱を積み重ねておいたら、重さで一番下の箱が「縮んで」いた。", "この鉛筆はもう「縮んで」いて、ちょっと書きづらい。", "洗濯物セーターを洗った、「縮んで」着られなくなった。", "建て替えて、家は広くなったが、庭が「縮んで」しまった。"],
+    correctOption: "洗濯物セーターを洗った、「縮んで」着られなくなった。",
+    Explanation: "ちぢむ to shrink, to contract, to diminish (in size)"
   },
   // Add more questions as needed
   
@@ -2670,6 +2835,150 @@ const questsSet7 = [
     correctOption: "思ってしまいがち",
     Explanation: "思ってしまいがち I tend to think about it"
   },
+  {
+    quest: "Y遊園地の昨年の人場者数は、１０００万人（　）上った。",
+    options: ["に", "で", "が", "と"],
+    correctOption: "に",
+    Explanation: "に at (place, time), in, on, during"
+  },
+  {
+    quest: "鉄道会社と自治体による長期間の議論（　）、新駅の建設が決定された。",
+    options: ["をめぐり", "を込めて", "の末に", "のことで"],
+    correctOption: "の末に",
+    Explanation: "議論の末に after a heated discussion"
+  },
+  {
+    quest: "今日は午後から晴れるという予報だったが、午後になっても雨はやまず、むしろ（　）ばかりだった。",
+    options: ["強い", "強く", "強かった", "強くなる"],
+    correctOption: "強くなる",
+    Explanation: "むしろ強くなるばかりだった。Rather it was just getting stronger."
+  },
+  {
+    quest: "哲学Ⅱの授業は、哲学Ⅰの単位を取得（　）、受けることができません。",
+    options: ["してからか", "してからでないと", "してからで", "してからでなくて"],
+    correctOption: "してからでないと",
+    Explanation: "してからでないと if you don't do it."
+  },
+  {
+    quest: "（広告で）\n現在、数量限定半額セールを実施中。商品が（　）終了しましたので、お早めに。",
+    options: ["なくなり次第", "なくなった以上", "なくなるうちに", "なくなっては"],
+    correctOption: "なくなり次第",
+    Explanation: "次第「しだい」dependent upon"
+  },
+  {
+    quest: "（花屋のホームページで）\nご予算に合わせて、花束をお作りします。送料無料で日にち指定の全国発送も（　）。",
+    options: ["申し上げます", "差し上げます", "いただきます", "うけたまわります"],
+    correctOption: "うけたまわります",
+    Explanation: "承る「うけたまわる」to hear, to be told, to know"
+  },
+  {
+    quest: "夫「行ってきます。」\n妻「え？会社、行くの？まだ熱があるんでしょう？」\n夫「大事な会議があるから、（　）んだ。」",
+    options: ["休んでもおかしくない", "休みっこない", "休みわけにはいかない", "休むほかない"],
+    correctOption: "休みわけにはいかない",
+    Explanation: "訳にはいかない「わけにはいかない」impossible to do (although wants to), cannot afford to, must not, no way we can"
+  },
+  {
+    quest: "Ａ「ねえ、見て、このゲーム。面白そうだから、買っちゃった。」\nＢ「あ、それって、最近雑誌（　）よく取り上げられてるゲームでしょう？」",
+    options: ["か何かを", "や何かで", "か何かか", "や何かは"],
+    correctOption: "や何かで",
+    Explanation: "や何かで or something"
+  },
+  {
+    quest: "砂糖、塩、酢、しょうゆ、みそ、これらは日本食を作る（　）調味料です。",
+    options: ["のに欠かせない", "ことは欠かさない", "のを欠かさない", "ことも欠かさない"],
+    correctOption: "のに欠かせない",
+    Explanation: "のに although, when, and yet, despite this, in spite of, even though, but even so, but even then, however, nevertheless, for all that, notwithstanding that\n欠かせない「かかせない」indispensable, vital, fundamental, imperative, crucial, critical"
+  },
+  {
+    quest: "うちの犬は、私が（　）、寂しいそうな目で私を見る。",
+    options: ["出かけるところに", "出かけようとしたまま", "出かけるところみたいで", "出かけようとするたびに"],
+    correctOption: "出かけようとするたびに",
+    Explanation: "出かけようとするたびに Every time I try to go out."
+  },
+  {
+    quest: "私は、ストレスは悪い（　）思っていたので、良いストレスもあると知って驚いた。",
+    options: ["ものだとなんて", "ものだとばかり", "などのことだと", "のみでのことだと"],
+    correctOption: "ものだとばかり",
+    Explanation: "ストレスは悪いものだとばかり思っていたので I just thouI just thought stress was just a bad thing"
+  },
+  {
+    quest: "司会者「お二人は、子供が外で遊ばなくなったのはなぜだと思いますか。」\n山田「子供が安心して遊べる場所がなくなったからだと思います。」\n西川「確かに（　）が、遊びの種類が変わったことも理由の一つだと思います。」",
+    options: ["そうします", "そのつもりです", "それもあるかもしれません", "それではありません"],
+    correctOption: "それもあるかもしれません",
+    Explanation: "それもあるかもしれません There might be that too."
+  },
+  {
+    quest: "料理の本に書いてある（　）作ってみたのだが、なぜかうまくいかなかった。",
+    options: ["ようで", "もとで", "ほどに", "とおりに"],
+    correctOption: "とおりに",
+    Explanation: "とおりに As you do"
+  },
+  {
+    quest: "村田「青木くんって、本当に面白い人だよね。」\n西野「うん。彼、人を笑わせることに（　）天才だからね。」",
+    options: ["向けては", "かけては", "沿っては", "わたっては"],
+    correctOption: "かけては",
+    Explanation: "にかけては when it comes to, concerning (an area of expertise)"
+  },
+  {
+    quest: "山田「私、青木先輩のようにカメラマンの仕事をしたいと思っているんです。ぜひ青木先輩のお話を（　）いただけないでしょうか。」\n青木「ああ、かまわないよ。」",
+    options: ["聞いて", "聞けて", "聞かせて", "聞かれて"],
+    correctOption: "聞かせて",
+    Explanation: "聞かせる「きかせる」to read to, to sing for, to inform, to tell, to persuade, to make understand"
+  },
+  {
+    quest: "今回の京都旅行は、天気が悪い日が多かったが、行きたかったお寺には行けたし、（　）楽しめた。",
+    options: ["そのうえ", "それなりに", "そのころに", "それどころか"],
+    correctOption: "それなりに",
+    Explanation: "其れなり「それなり」in itself, as it is, in its own way, as suits the occasion\nwithin its capacity, within limitations"
+  },
+  {
+    quest: "バス停に着いたとき、出発時刻の１時間前に空港に着くバスがちょうど来たので（　）が満員で乗れず、結局、飛行機に間に合わなかった。",
+    options: ["乗っている途中だった", "乗ったところだ", "乗っているつもりだった", "乗ろうとした"],
+    correctOption: "乗ろうとした",
+    Explanation: "しようとする to try and do something, to attempt to do something\nVようとする"
+  },
+  {
+    quest: "友達の中には、仕事が休みの日はすることがなくて、暇（　）と言う人もいる。",
+    options: ["でしょうがない", "そうにない", "にすぎない", "すらない"],
+    correctOption: "でしょうがない",
+    Explanation: "暇「ひま」でしょうがない I'm so bored （とてもひまだ）"
+  },
+  {
+    quest: "森田「村山さん、Y社の川西部長が（　）。会議室でお待ちです。」\n村山「わかりました。」",
+    options: ["参りました", "承りました", "見えました", "伺いました"],
+    correctOption: "見えました",
+    Explanation: "みえる to be seen, to be in sight, to look, to seem, to appear, \nto come「Honorific or respectful (sonkeigo) language」"
+  },
+  {
+    quest: "医者「明日になっても熱が下がらない（　）、この薬を飲んでください。」",
+    options: ["ようであれば", "からであれば", "というようには", "というからには"],
+    correctOption: "ようであれば",
+    Explanation: "であれば if it is the case that ..."
+  },
+  {
+    quest: "（歌の練習で）\n先生「最初は、緊張して大きな声で歌えないと思います。でも、（　）だんだん大きな声で歌えるようになりますよ。」",
+    options: ["練習していくうちに", "練習してでも", "練習するのに対して", "練習するのに比べて"],
+    correctOption: "練習していくうちに",
+    Explanation: "練習していくうちに As I practice"
+  },
+  {
+    quest: "監督「みんな、今日は本当によくやった。この調子であしたの決勝戦もがんばろう。おれたちが勝って世界を（　）じゃないか。」",
+    options: ["驚いてやろう", "驚いてもらおう", "驚かせてやろう", "驚かせてもらおう"],
+    correctOption: "驚かせてやろう",
+    Explanation: "おどろかせる to surprise, to frighten, to create a stir\nやろう seems, I guess"
+  },
+  {
+    quest: "妹「お姉ちゃん、パソコン貸して。」\n姉「いいよ。あ、あとで私も使うから、電源は（　）。」\n妹「わかった。」",
+    options: ["入れてからにして", "入れたままにしておいて", "入れたつもりでいて", "入れなきゃならなくて"],
+    correctOption: "入れたままにしておいて",
+    Explanation: "儘に「ままに」as (e.g. do as one is told, as we age we gain wisdom), wherever (e.g. wherever my fancy took me)"
+  },
+  {
+    quest: "会議は９時間始の予定だったが、開始時刻までに来たのは３人だけだった。遅れてきた人に理由を聞いたら、開始時刻が正しく（　）。",
+    options: ["伝わらないはずだった", "伝えなかったらしい", "伝えていないはずだった", "伝わっていなかったらしい"],
+    correctOption: "伝わっていなかったらしい",
+    Explanation: "伝わる「つたわる」to be handed down, to be introduced, to be transmitted, to be circulated, to go along, to walk along\nらしいseeming ... (expresses judgment based on evidence, reason or trustworthy hearsay), appearing ...\nはず expectation that something took place, will take place or was in some state, it should be so, bound to be, expected to be, must be"
+  },
     // Add more questions as needed
 ];
 
@@ -2913,6 +3222,66 @@ const questsSet8 = [
     options: ["今にも動き出して", "近づいてきそうなほど", "描かれて", "本物そっくりに"],
     correctOption: "本物そっくりに",
     Explanation: "今にも動き出して近づいてきそうなほど本物そっくりに描かれて"
+  },
+  {
+    quest: "この国でサッカー___ ___ _★_ ___野球だ。",
+    options: ["スポーツ", "に次いで", "といえば", "人気のある"],
+    correctOption: "スポーツ",
+    Explanation: "に次いで人気のあるスポーツといえば"
+  },
+  {
+    quest: "田中「あれ？木村さん、だいぶ髪が伸びましたね」\n木村「ええ、半年前に___ ___ _★_ ___ないんですよ。」",
+    options: ["きり", "一度も", "切って", "切った"],
+    correctOption: "一度も",
+    Explanation: "切ったきり一度も切って"
+  },
+  {
+    quest: "私たちの学校には指導熱心な先生方が多いが、___ ___ _★_ ___信頼も厚い",
+    options: ["生徒は", "山田先生は", "もとより", "保護者からの"],
+    correctOption: "もとより",
+    Explanation: "山田先生は生徒はもとより保護者からの"
+  },
+  {
+    quest: "宇宙にはこれだけ___ ___ _★_ ___としても不思議ではないと思う。",
+    options: ["多くの星がある", "生物がいた", "のだから", "どこかの星に"],
+    correctOption: "どこかの星に",
+    Explanation: "多くの星があるのだからどこかの星に生物がいた"
+  },
+  {
+    quest: "仕事の___ ___ _★_ ___山田さんと林さんだが、プライベートではとても仲がいい。",
+    options: ["対立する", "ことの", "上では", "多い"],
+    correctOption: "ことの",
+    Explanation: "上では対立することの多い"
+  },
+  {
+    quest: "Ａ「じゃあ、そろそろ帰るね。お茶、ごちそうさまでした。」\bＢ「え、もう帰るの？せっかく___ _★_ ___ ___いいのに。」",
+    options: ["もう少し", "いけば", "来たんだから", "ゆっくりして"],
+    correctOption: "もう少し",
+    Explanation: "来たんだからもう少しゆっくりしていけば"
+  },
+  {
+    quest: "レポートを作成___ ___ _★_ ___ことは、事実なのか意見なのかを明確にすることだ。",
+    options: ["注意", "上で", "する", "すべき"],
+    correctOption: "注意",
+    Explanation: "する上で注意すべき"
+  },
+  {
+    quest: "私は、どんなに___ ___ _★_ ___。",
+    options: ["つらいことがあっても", "いつもにこにこしている", "石川さんを尊敬している", "そんな様子を全く見せず"],
+    correctOption: "いつもにこにこしている",
+    Explanation: "つらいことがあってもそんな様子を全く見せずいつもにこにこしている石川さんを尊敬している"
+  },
+  {
+    quest: "Ａ「サラリーマンから農業___ ___ _★_ ___があるんだね。」\nＢ「自分の夢をどうしてもあきらめきれなくてね。」",
+    options: ["勇気", "とは", "ずいぶん", "になる"],
+    correctOption: "ずいぶん",
+    Explanation: "になるとはずいぶん勇気"
+  },
+  {
+    quest: "Ａ「昨日、また仕事で失敗しちゃったんだよね。この仕事、私には向いていないんだろうね。やっぱり転職しようかな。」\bＢ「私は反対しないよ。本当に向いていないと___ ___ _★_ ___思うからね。」",
+    options: ["こともないと", "思う", "んだったら", "続ける"],
+    correctOption: "続ける",
+    Explanation: "思うんだったら続けることもないと"
   },
   // Add more questions as needed
   
