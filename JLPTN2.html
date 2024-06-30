@@ -636,6 +636,12 @@ const questsSet1 = [
     correctOption: "すいちょく",
     Explanation: "vertical, perpendicular"
   },
+  {
+    quest: "この食品は「冷蔵庫」で保存してください。",
+    options: ["れいとうこ", "れいぞうこう", "れいぞうこ", "れいとうこう"],
+    correctOption: "れいぞうこ",
+    Explanation: "refrigerator"
+  },
   // Add more questions as needed
 ];
 
@@ -1150,6 +1156,18 @@ const questsSet2 = [
     correctOption: "永久",
     Explanation: "eternity, perpetuity, immortality\nEikyuu era (1113.7.13-1118.4.3)"
   },
+  {
+    quest: "私は大学院に「ざいせき」している。",
+    options: ["採籍", "在簿", "在籍", "採簿"],
+    correctOption: "在籍",
+    Explanation: "ざいせき enrollment, enrolment"
+  },
+  {
+    quest: "全力で走ったので、息が「あらく」なった。",
+    options: ["暴く", "激く", "荒く", "難く"],
+    correctOption: "荒く",
+    Explanation: "荒い「あらい」rough, rude, wild"
+  },
   // Add more questions as needed
 ];
 
@@ -1404,7 +1422,7 @@ const questsSet3 = [
     quest: "歴史小説家西村氏の代表的な作品を収めた作品（　）が発行された。",
     options: ["集", "族", "部", "団"],
     correctOption: "集",
-    Explanation: "集「しゅう」collection, compilation"
+    Explanation: "作品集「さくひんしゅう」anthology, collection of works"
   },
   {
     quest: "ここから駅まで行くなら、線路（　）の道を行くのが一番早いですよ。",
@@ -1609,6 +1627,24 @@ const questsSet3 = [
     options: ["本", "正", "真", "完"],
     correctOption: "真",
     Explanation: "真後ろ「まうしろ」right behind"
+  },
+  {
+    quest: "駅の北側には、住宅（　）が広がっている。",
+    options: ["枠", "界", "面", "街"],
+    correctOption: "街",
+    Explanation: "住宅街「じゅうたくがい」residential area"
+  },
+  {
+    quest: "資料を見ると、数値に（　）正確なところがあった。",
+    options: ["否", "反", "非", "不"],
+    correctOption: "不",
+    Explanation: "不正確「ふせいかく」uncertainty, inaccuracy"
+  },
+  {
+    quest: "スポーツテストの結果を学年（　）に見ると、一年生だけが昨年を上回っていた。",
+    options: ["別", "境", "段", "節"],
+    correctOption: "別",
+    Explanation: "学年別「がくねんべつ」means 'by grade' or 'by school year.'"
   },
   // Add more questions as needed
   
@@ -2359,6 +2395,48 @@ const questsSet4 = [
     correctOption: "ばっさり",
     Explanation: "with a single stroke, resolutely, drastically, completely"
   },
+  {
+    quest: "市役所には騒音などの迷惑行為に対する（　）が寄せられる。",
+    options: ["苦情", "悪意", "不便", "多難"],
+    correctOption: "苦情",
+    Explanation: "くじょう complaint, troubles, objection, grievance"
+  },
+  {
+    quest: "ここは桜の（　）で、春になると大勢の花見客が訪れる。",
+    options: ["要所", "名所", "実地", "現場"],
+    correctOption: "名所",
+    Explanation: "めいしょ／などころ famous place, name of a part (of an instrument, etc.), name and address"
+  },
+  {
+    quest: "この資格を持っていると就職に（　）になると聞いた。",
+    options: ["先着", "優先", "強力", "有利"],
+    correctOption: "有利",
+    Explanation: "有利／優利「ゆうり」advantageous, better, profitable, lucrative"
+  },
+  {
+    quest: "あの政治家は記者会見に元気な様子で現れて、病気だといううわさを（　）。",
+    options: ["入れ替えた", "打ち消した", "追い返した", "差し引いた"],
+    correctOption: "打ち消した",
+    Explanation: "打ち消した／打消す「うちけす」to deny, to contradict, o negate (esp. a sound), to drown out"
+  },
+  {
+    quest: "料理本を見ながら、自分の好みに合うように味付けを（　）する。",
+    options: ["コメント", "デザイン", "アレンジ", "ケア"],
+    correctOption: "アレンジ",
+    Explanation: "アレンジ (arrange) means to modify or adjust. When cooking, it is common to adjust the seasoning to suit one’s personal taste."
+  },
+  {
+    quest: "クイズの答えがわからなくて（　）答えたのに、正解だった。",
+    options: ["でたらめに", "わがままに", "ぎざぎざに", "ごちゃごちゃに"],
+    correctOption: "でたらめに",
+    Explanation: "出鱈目「でたらめ／デタラメ」irresponsible utterance, nonsense, bullshit, codswallop"
+  },
+  {
+    quest: "昨夜はこの冬でいちばんの寒さとなり、最低気温はマイナス２０度に（　）。",
+    options: ["減った", "達した", "通じた", "沈んだ"],
+    correctOption: "達した",
+    Explanation: "達す「たっす」to reach, to get to"
+  },
   // Add more questions as needed
 ];
 
@@ -2367,13 +2445,13 @@ const questsSet5 = [
     quest: "この仕事はとても「ハード」だ。",
     options: ["楽しい", "簡単だ", "大変だ", "新しい"],
     correctOption: "大変だ",
-    Explanation: "ハード hard,tough,hardware,harddisk"
+    Explanation: "ハード hard,tough,hardware,harddisk\nたいへん very, greatly"
   },
   {
     quest: "その話を聞いて「動揺」した。",
     options: ["うれしくなった", "不安になった", "不満に思った", "面白いと思った"],
     correctOption: "不安になった",
-    Explanation: "どうよう shaking, trembling, pitching, rolling, oscillation"
+    Explanation: "どうよう shaking, trembling, pitching, rolling, oscillation\nふあん anxiety, uneasiness, insecurity, suspense"
   },
   {
     quest: "早く「引き返した」ほうがいい。",
@@ -2993,6 +3071,24 @@ const questsSet5 = [
     correctOption: "借りた",
     Explanation: "レンタル rental\n借りる「かりる」to borrow, to have a loan"
   },
+  {
+    quest: "村さんは「不平」ばかり言っている。",
+    options: ["文句", "冗談", "うそ", "自慢"],
+    correctOption: "文句",
+    Explanation: "不平「ふへい」complaint, discontent, dissatisfaction\n文句「もんく」complaint, grumbling, objection"
+  },
+  {
+    quest: "あんなことを言われたら、誰だって「むかつく」よ。",
+    options: ["怒る", "驚く", "困る", "怖がる"],
+    correctOption: "怒る",
+    Explanation: "むかつく to feel irritated, to feel offended, to feel angry\n怒る／瞋る「おこる／いかる」to get angry, to get mad"
+  },
+  {
+    quest: "今回の件は、「まれな」例です。",
+    options: ["複雑な", "よくある", "ほとんどない", "単純な"],
+    correctOption: "",
+    Explanation: "稀「まれ」NA-adjectiveーrare, seldom\n殆どない「ほとんどない」almost never, few and far between, little or nothing, hardly any, hardly anything at all, very little"
+  },
   // Add more questions as needed
   
 ];
@@ -3265,8 +3361,8 @@ const questsSet6 = [
   {
     quest: "隔てる",
     options: ["この二つの問題は「隔てて」考えるべきだ。", "大きな川が二つの市を「隔てて」いる。", "５分ほど休憩を「隔てて」、１１時から再開します。", "試験のときは、隣の人と「隔てて」座ってください。"],
-    correctOption: "試験のときは、隣の人と「隔てて」座ってください。",
-    Explanation: "へだてる to separate (by distance, time, etc.), to isolate, to partition, to divide"
+    correctOption: "大きな川が二つの市を「隔てて」いる。",
+    Explanation: "隔てる means 'to separate' or 'to divide.' In this sentence, it correctly describes how a large river separates two cities.\nへだてる to separate (by distance, time, etc.), to isolate, to partition, to divide"
   },
   {
     quest: "頑丈",
@@ -3507,6 +3603,42 @@ const questsSet6 = [
     options: ["私のうちは、周りを高層マンションに「覆われて」いて、日当たりが悪い。", "優勝した森選手は大勢の記者に「覆われて」インタビューを受けていた。", "公園に続く並木道はすっかり落ち葉で「覆われて」いた。", "部屋が暑いのか、中島さんの顔は汗で「覆われて」いた。"],
     correctOption: "公園に続く並木道はすっかり落ち葉で「覆われて」いた。",
     Explanation: "覆う／被う／掩う/蔽う／蓋う「おおう」to cover, to hide, to conceal, to wrap, to disguise"
+  },
+  {
+    quest: "論争",
+    options: ["全員の面接が終わったので、試験官は「論争」のため別室に移った。", "前田さんは私が言うことにいちいち「論争」するので、やりにくくて困る。", "二人はその問題について「論争」を繰り返しているが、いまだに決着がつかない。", "私が両親に「論争」すると、二人は静かに聞き、的確にアドバイスしてくれた。"],
+    correctOption: "二人はその問題について「論争」を繰り返しているが、いまだに決着がつかない。",
+    Explanation: "ろんそう controversy, dispute"
+  },
+  {
+    quest: "役目",
+    options: ["次の公演で、私は医者の「役目」を演じる。", "健康のために、毎朝散歩することが「役目」になっている。", "池田さんが今日の掃除の「役目」だ。", "部下に仕事を教えるのは、課長の「役目」の一つだ。"],
+    correctOption: "部下に仕事を教えるのは、課長の「役目」の一つだ。",
+    Explanation: "やくめ duty, business, role"
+  },
+  {
+    quest: "最寄り",
+    options: ["「最寄り」の店までは、歩いて30分だ。", "彼女は私の「最寄り」の友達だ。", "「最寄り」の試験は来月にある。", "電車の中で「最寄り」の人に足を踏まれた。"],
+    correctOption: "「最寄り」の店までは、歩いて30分だ。",
+    Explanation: "最寄り／最寄「もより」nearest, neighbouring, neighboring, nearby"
+  },
+  {
+    quest: "解約",
+    options: ["大臣は、内容に誤りがあったと述べ、昨日の発言を「解約」した。", "１年の留学を終えて国へ帰るので、銀行の口座を「解約」した。", "やむをえない理由により、A社との面会を「解約」した。", "あの会社は今年は赤字を「解約」することができた。"],
+    correctOption: "１年の留学を終えて国へ帰るので、銀行の口座を「解約」した。",
+    Explanation: "解約「かいやく」cancellation of contract"
+  },
+  {
+    quest: "演説",
+    options: ["卒業生代表の森さんは卒業式での「演説」で、先生方への感謝の気持ちを述べた。", "首相は昨日の国会での「演説」で、経済対策を最優先するとの決意を述べた。", "決勝進出が決まった中島選手は試合後の「演説」で、必ず優勝すると述べた。", "Ａ社の社長は記者会見の「演説」で、今後の事業方針について述べた。"],
+    correctOption: "首相は昨日の国会での「演説」で、経済対策を最優先するとの決意を述べた。",
+    Explanation: "えんぜつ speech, address\nthe term 演説 is usually reserved for more significant, public, and often political speeches."
+  },
+  {
+    quest: "きっぱり",
+    options: ["めがねをかけると、遠くの物も「きっぱり」見えるようになる。", "このラーメンはもう何度も食べたので、「きっぱり」飽きてしまった。", "鈴木さんは石川さんからのデートの誘いを「きっぱり」断った。", "むかしのことはなかなか「きっぱり」思い出せない。"],
+    correctOption: "鈴木さんは石川さんからのデートの誘いを「きっぱり」断った。",
+    Explanation: "きっぱり／きっぱりと clearly, plainly, decisively, distinctly, flatly\nきっぱり means “decisively” or “categorically,” and it is used to describe a firm and clear decision or action. In this sentence, 鈴木さん (Suzuki-san) decisively refused 石川さん’s (Ishikawa-san’s) invitation for a date, which fits the meaning of きっぱり perfectly."
   },
   // Add more questions as needed
   
@@ -3919,7 +4051,7 @@ const questsSet7 = [
     quest: "日本の人気バンド「Ｚ］は、ヨーロッパでコンサートを行うなど、活動を世界（　）広げている。",
     options: ["でと", "へと", "からも", "ほども"],
     correctOption: "へと",
-    Explanation: "It's expanding to the active world"
+    Explanation: "へと indicates a direction or goal towards which something is moving or expanding. it fits well in the context of expanding activies globally"
   },
   {
     quest: "パソコン教室の講師に（　）、人に教えるのは難しいけど楽しいということがわかりました。",
@@ -3973,7 +4105,7 @@ const questsSet7 = [
     quest: "彼は小説家になってから、１年に１冊のペースで長編小説を（　）、来月出る小説で１０冊目となる。",
     options: ["発表しつつ", "発表しており", "発表するにつれ", "発表したところで"],
     correctOption: "発表しており",
-    Explanation: "Since he become a novelist, he has published a long novel at a pace of one book a year, and it will be the 10th novel that will come out next month."
+    Explanation: "発表しており means is publishing or has been publishing, indicating an ongoing action that started in the past and continues to the present.\nSince he become a novelist, he has published a long novel at a pace of one book a year, and it will be the 10th novel that will come out next month."
   },
   {
     quest: "駅前に新しくできたラーメン屋はいつも込んでいる。昨日も大雨（　）行列ができていた。",
@@ -4015,7 +4147,7 @@ const questsSet7 = [
     quest: "（ホームページで）\nQ：ゲームをしていたら、急に画面が暗くなってしまいました。どうしたらいいですか。\nA：一度電源を切り、１分くらい経ってからまたつけてみてください。ただし、同じことが何度も（　）故障です。修理を依頼してください。",
     options: ["繰り返させるようならば", "繰り返せるようになれば", "繰り返されるようならば", "繰り返させられるようになれば"],
     correctOption: "繰り返されるようならば",
-    Explanation: "If it seems to be repeated"
+    Explanation: "If it repeatedly happens\nされる honorific or passive form of the verb ’suru’"
   },
   {
     quest: "この料理はとても簡単で、鶏肉と卵（　）あればすぐに作れます。",
@@ -4045,7 +4177,7 @@ const questsSet7 = [
     quest: "今年の映画祭の来場者は、開幕から３日で１０万人に達した。八日間の開催期間で最終的には昨年の２０万人を大幅に上回る（　）。",
     options: ["までだ", "次第だ", "勢いだ", "最中だ"],
     correctOption: "勢いだ",
-    Explanation: "勢い「いきおい」force, vigor, vigour, energy, spirit, life"
+    Explanation: "勢いだ This option means 'momentum' or 'trend'\n勢い「いきおい」force, vigor, vigour, energy, spirit, life"
   },
   {
     quest: "大西病院では、現在事務職員を募集しています。詳細は、ホームページを（　）か、直接お電話でお問い合わせください。",
@@ -4123,7 +4255,7 @@ const questsSet7 = [
     quest: "（花屋のホームページで）\nご予算に合わせて、花束をお作りします。送料無料で日にち指定の全国発送も（　）。",
     options: ["申し上げます", "差し上げます", "いただきます", "うけたまわります"],
     correctOption: "うけたまわります",
-    Explanation: "承る「うけたまわる」to hear, to be told, to know"
+    Explanation: "うけたまわります means 'to accept orders' or 'to take requests,' and it is a polite form used in customer service contexts to indicate that the service is available.\n承る「うけたまわる」to hear, to be told, to know"
   },
   {
     quest: "夫「行ってきます。」\n妻「え？会社、行くの？まだ熱があるんでしょう？」\n夫「大事な会議があるから、（　）んだ。」",
@@ -4135,13 +4267,13 @@ const questsSet7 = [
     quest: "Ａ「ねえ、見て、このゲーム。面白そうだから、買っちゃった。」\nＢ「あ、それって、最近雑誌（　）よく取り上げられてるゲームでしょう？」",
     options: ["か何かを", "や何かで", "か何かか", "や何かは"],
     correctOption: "や何かで",
-    Explanation: "や何かで or something"
+    Explanation: "や何かで means 'in magazines and other places,' indicating that the game has been frequently featured in magazines and possibly other media."
   },
   {
     quest: "砂糖、塩、酢、しょうゆ、みそ、これらは日本食を作る（　）調味料です。",
     options: ["のに欠かせない", "ことは欠かさない", "のを欠かさない", "ことも欠かさない"],
     correctOption: "のに欠かせない",
-    Explanation: "のに although, when, and yet, despite this, in spite of, even though, but even so, but even then, however, nevertheless, for all that, notwithstanding that\n欠かせない「かかせない」indispensable, vital, fundamental, imperative, crucial, critical"
+    Explanation: "のに欠かせない means 'indispensable for' indicating that these ingredients are essential for making Japanese food.\nことは欠かさない means 'never fails', のを欠かさない means 'never misses', ことも欠かさない means 'is also indispensable'\n欠かす「かかす」to miss (doing), to fail (to do)"
   },
   {
     quest: "うちの犬は、私が（　）、寂しいそうな目で私を見る。",
@@ -4729,13 +4861,31 @@ const questsSet7 = [
     quest: "妹「ねえ、ベランダに干しておいた私のTシャツがないんだけど、知らない?」\n姉「そうなの?今日、風強かったから、飛ばされて外に( )?」",
     options: ["落ちちゃったんだって", "落ちちゃったんじゃない", "落としちゃったんだって", "落としちゃったんじゃない"],
     correctOption: "落ちちゃったんじゃない",
-    Explanation: "落ちちゃったんじゃない: これは推測を表現する適切な形で、文脈に合います。"
+    Explanation: "落ちちゃったんじゃない: これは推測を表現する適切な形で、文脈に合います。\nちゃった finished doing, did completely"
   },
   {
     quest: "情報化や国際化が進む現代において、学校の教育がこれまでと( )。コンピュータなどの新しい教育内容が取り 入れられるのも当然の流れだと思う。",
     options: ["同じでいいはずがない", "同じというだけではない", "同じならいいに違いない", "同じにならないことはない"],
     correctOption: "同じでいいはずがない",
-    Explanation: "同じでいいはずがない: 現代の変化に対応するために、教育も変わるべきだという意味で、文脈に最も適しています。"
+    Explanation: "はずがない cannot (do), it is impossible that..., it is (highly) unlikely that...\n同じでいいはずがない: 現代の変化に対応するために、教育も変わるべきだという意味で、文脈に最も適しています。"
+  },
+  {
+    quest: "市長は、記者会見で「高速道路建設に反対している市民も少なくないのだから、市長として、そのことを無視して建設計画を（　）。」と述べた。",
+    options: ["進めそうにない", "進めてもかまわない", "進めずにはいられない", "進めるわけにはいかない"],
+    correctOption: "進めるわけにはいかない",
+    Explanation: "進めるわけにはいかない: This means “cannot proceed,” clearly indicating that the mayor cannot ignore the citizens’ opposition and must respect their views.\n進めそうにない: This means “might not be able to proceed,” \n進めてもかまわない: This means “it’s okay to proceed,”\n進めずにはいられない: This means “cannot help but proceed,” "
+  },
+  {
+    quest: "ホテルのフロント係として働き始めたころは、「どんなに忙しくてもお客様には疲れた顔を（　）。」と先輩によく注意された。",
+    options: ["見せないために", "見えないこと", "見せないように", "見えないもの"],
+    correctOption: "見せないように",
+    Explanation: "見せないために “in order not to show,”\n見せないために: これは「見せないための目的」を表現していますが、文脈的には「見せないように」と同じ意味で使われることが多いです。ただし、文法的には「見せないように」の方が自然です。"
+  },
+  {
+    quest: "田中:「次回の勉強会のテーマは何にしましょうか。」\n山下:「私は消費者心理に興味があります。」\n石川:「それも面白そうですが、私はアンケートの分析方法を（　）。」",
+    options: ["取り上げようとするでしょうか", "取り上げるようになるでしょうか", "取り上げたいのだろうと思います", "取り上げてみてはどうかと思います"],
+    correctOption: "取り上げてみてはどうかと思います",
+    Explanation: "取り上げてみてはどうかと思います: Why don't you take it up? これは「取り上げてみるのはどうか」という提案を表現しており、文脈に最も適しています。"
   },
     // Add more questions as needed
 ];
@@ -4883,7 +5033,7 @@ const questsSet8 = [
     quest: "試合に負けて本当に悔しかったので、もっと強くなるため___ ___ _★_ ___耐えようと思います。",
     options: ["だって", "なら", "厳しい練習に", "どんな"],
     correctOption: "厳しい練習に",
-    Explanation: "だってどんな厳しい練習になら"
+    Explanation: "ならどんな厳しい練習にだって"
   },
   {
     quest: "母は「風邪にひかないのは、___ ___ _★_ ___」とよく言っている。",
@@ -4895,7 +5045,7 @@ const questsSet8 = [
     quest: "「わたし、辛いものを食べると、___ ___ _★_ ___せきが出るんです。」",
     options: ["ほど", "必ず", "いい", "といって"],
     correctOption: "いい",
-    Explanation: "必ずといっていいほど"
+    Explanation: "必ずほどいいといって"
   },
   {
     quest: "（学校の正門で）\nA「みんないますか。」\nB「田中さんがいません。」\nA「授業のあと___ ___ _★_ ___のかな。」",
@@ -5220,6 +5370,36 @@ const questsSet8 = [
     options: ["と", "経験させたい", "からこそ", "願う"],
     correctOption: "願う",
     Explanation: "経験させたいと願うからこそ"
+  },
+  {
+    quest: "良い___ _★_ ___ ___増加は期待できない。",
+    options: ["その良さが", "客に伝わらなければ", "売り上げの", "商品やサービスであっても"],
+    correctOption: "その良さが",
+    Explanation: "商品やサービスであってもその良さが客に伝わらなければ売り上げの"
+  },
+  {
+    quest: "先輩の家にはオルガンがある。５年前に___ _★_ ___ ___だと言っていた。",
+    options: ["もらったときに", "一度弾いたきり", "海外に引っ越した", "友達からもらったもので"],
+    correctOption: "友達からもらったもので",
+    Explanation: "海外に引っ越した友達からもらったものでもらったときに一度弾いたきり"
+  },
+  {
+    quest: "雑誌か___ _★_ ___ ___人との出会いだとインタビューに答えていたのを見て、本当にそうだなと思った。",
+    options: ["自分にとって", "何かで", "人生で一番大切なのは", "確かが"],
+    correctOption: "確かが",
+    Explanation: "何かで確かが自分にとって人生で一番大切なのは"
+  },
+  {
+    quest: "なかなか___ ___ _★_ ___行けることになった。",
+    options: ["ようやく", "行けなかった", "レストランに", "予約がとれなくて"],
+    correctOption: "レストランに",
+    Explanation: "予約がとれなくて行けなかったレストランにようやく"
+  },
+  {
+    quest: "なぜときどき駅ですれ違う___ ___ _★_ ___自分でもよくわからない。",
+    options: ["だけの", "こんなに気になる", "のか", "彼女のことが"],
+    correctOption: "彼女のことが",
+    Explanation: "だけの彼女のことがこんなに気になるのか"
   },
   // Add more questions as needed
   
